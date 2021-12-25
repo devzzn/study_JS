@@ -1,0 +1,4 @@
+test01 - 전역객체 예시
+test02 - 전역 프로퍼티
+test03 - 전역 함수(eval(), isFinite(), isNaN(), parseFloat(), parseInt())
+test04 - 전역 함수(encodeURI(), decodeURI(), encodeURIComponent(), decodeURIComponent())
