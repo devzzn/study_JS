@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p>전역 변수를 사용한 Counting</p>
+  <button id="inclease">+</button>
+  <p id="count">0</p>
+  <script>
+    var incleaseBtn = document.getElementById('inclease');
+    var count = document.getElementById('count');
+
+    // 카운트 상태를 유지하기 위한 전역 변수
+    var counter = 0;
+
+    function increase() {
+      return ++counter;
+    }
+
+    incleaseBtn.onclick = function () {
+      count.innerHTML = increase();
+    };
+  </script>
+</body>
+</html>
+<!-- 
+    위 코드는 잘 동작하지만 오류를 발생시킬 가능성을 내포하고 있는 좋지 않은 코드다. 
+    increase 함수는 호출되기 직전에 전역변수 counter의 값이 반드시 0이여야 제대로 동작한다. 
+    하지만 변수 counter는 전역 변수이기 때문에 언제든지 누구나 접근할 수 있고 변경할 수 있다. 
+    이는 의도치 않게 값이 변경될 수 있다는 것을 의미한다. 만약 누군가에 의해 의도치 않게 전역 변수 counter의 값이 변경됐다면 이는 오류로 이어진다. 
+    변수 counter는 카운터를 관리하는 increase 함수가 관리하는 것이 바람직하다.
+ -->
