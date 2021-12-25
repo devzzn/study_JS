@@ -3,3 +3,7 @@ test02.js - var 키워드로 선언된 변수의 문제점
 test03.js - 객체(Object), 프로퍼티, 메소드
 test04.js - 변수의 변경 불가성 (immutability)
 test05.js - 함수
+test06.js - 프로토타입
+test07.js - 스코프
+test08.js - strict mode
+test09.js - this
